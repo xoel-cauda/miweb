@@ -1,3 +1,4 @@
+tupadre=True
 tumadre=True
 gay=True
 if tumadre == gay:
