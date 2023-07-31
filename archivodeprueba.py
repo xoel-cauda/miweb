@@ -42,4 +42,15 @@ def bits_a_num():
 
 
 
-bits_a_num()
+
+lista=[1,2,4,8]
+
+def girarlista(lista):
+    for x in range(len(lista)):
+        indice = (len(lista)) - x
+        print(lista[indice - 1])
+
+
+
+
+girarlista([1,2,4,8])
