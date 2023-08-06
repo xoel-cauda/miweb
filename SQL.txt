@@ -1,0 +1,26 @@
+SELECT se usa para mostrar cosas. El * significa TODO y es muy util para mostrar toda una linea
+con, por ejemplo un "SELECT * FROM Mitabla"
+el AS es para cambiarle a algo el nombre de manera temporal para mostrar el resutlado
+por ejemplos  "SELECT Nombres AS nombrecitos FROM Mitabla"
+el ORDER BY es para ordenar de alguna manera la tabla. Por ejemplo 
+"SELECT * FROM Mitabla
+ORDER BY edad (esto lo ordenaria de menor a mayor). Para ordenarlo al reves se le agrega "DESC"
+igualmente si ordenamos txt, se prioriza: NULL, numeros (0,1,2...) y despues las letras (a,b,c)
+si ponemos NULL first/last cambia por ejemplo donde se muestran. si usamos la funcion RANDOM() en
+donde iria "edad" se ordenaria de manera random. 
+Tambien se puede ordeanr bajo 2 columnas diferentes, donde va a priorizar la primera y en caso de
+nombres iguales, va a ordenarlos por la otra forma de ordenarla.
+
+Si despues de un SELECT ponemos DISTINCT, no repite nombres al mostrar
+
+El DELETE para borrar una linea se usa asi:
+DELETE FROM (no lleva asterico) (tabla) WHERE (Nombre de una columna) = ("lo que diga en la linea que se quiera borrar que coincida con la columna")
+esto de aca funciona tambien con SELECT * FROM Mitabla (En vez de el DELETE)
+si ponemos "DELETE FROM (tabla)" borra la tabla entera, re gracioso cuando lo haga sin querer
+
+UPDATE es para cambiar un campo, SET es para decir que columna va a cambiar y por que valor va a cambiar
+EJ: UPDATE Mitabla SET horario = "10:30"
+WHERE id turno = 2;
+esto cambiaria en la tabla "Mitabla"  en el ID 2 su horario
+
+se puede usar en AND, el OR y el NOT, tambien los "()"
